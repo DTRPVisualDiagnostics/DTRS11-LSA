@@ -1,0 +1,23 @@
+{
+  "corpus": {
+    "sentenceSplitting": true,
+    "corpusFolderLocation" : "./tmp/",
+    "stopwords": ["yeah","ok","like","mhm","err","think", "xxx", "eh", "ehm", "huh", "umm", "uhh", "hm", "wow", "yes", "can", "maybe", "okay", "mmh", "ah", "oh", "mmm", "uh", "mm", "also", "m", "hehe", "haha", "brian", "ll", "p", "don", "just", "one", "re", "ve", "uhm"],
+    "datasets": [
+      {
+        "path": "./datasets",
+        "transcriptColumn" : 3,
+        "delimiter" : ",",
+        "rowsToSkip" : 1
+      }
+    ]
+  },
+  "LSA" : {
+    "numberOfTopics" : 100,
+    "modelFileLocation" : "./tmp/model_100_topics.lsi"
+  },
+  "coherence" : {
+    "slidingWindow" : 5,
+    "outputFolderLocation" : "./results/"
+  }
+}
