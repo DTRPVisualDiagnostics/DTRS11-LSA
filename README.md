@@ -16,7 +16,11 @@ It is separated into three steps that can be used independently:
 This modularity enables you for example to swap out LSA for another model like LDA or try out different coherence calculations. 
 Make sure to only include the steps you want to execute in the main.py file.
 
-In order to run it, first install the dependencies with ```pip install -r requirements.txt``` and then simply executing ```python code/main.py```.
+In order to run it:
+- first install the dependencies with ```pip install -r requirements.txt```
+- put your data into the datasets directory 
+- adjust the config.json file (more on configuration below)
+- execute the main script with ```python main.py```
 
 It works with data in a tabular format (csv or tsv) and can be configured by changing the values in the config.json file.
 
